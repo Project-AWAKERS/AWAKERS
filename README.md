@@ -1,4 +1,4 @@
-#AWAKERS
+# AWAKERS
 
 ## Vue.js 개발환경 설정 
 1. 해당 리포지토리 .zip파일 다운
