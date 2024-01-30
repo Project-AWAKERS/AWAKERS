@@ -14,15 +14,20 @@ export default createRouter({
     // pages: page를 구분해주는 개념
     routes: [
         {
+            // 페이지 경로
             path: "/",
             name: LoginPage,
             component: LoginPage,
         },
         {
-            // 페이지 경로
             path: "/AttendancePage",
             name: AttendancePage,
             component: AttendancePage,
+        },
+        {
+            path: "/AddEventPage",
+            name: AddEventPage,
+            component: AddEventPage,
         },
     ],
 });

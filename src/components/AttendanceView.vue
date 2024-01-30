@@ -21,7 +21,7 @@
                         <!--토스트 팝업 메뉴 버튼 -->
                         <div class="toast">
                             <button type="button" class="toastButton">
-                                <img src="../assets/plus-square.svg" @click="isOpen=true" alt="Add Event" class="addButton">
+                                <img src="../assets/plus-square.svg" onclick="location.href='#/AddEventPage'" alt="Add Event" class="addButton">
                             </button>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                     <div class="filterButton2">
                         <select name="orders" id="order">
                             <option value="date">날짜순</option>
-                            <option value="lexical">가나다순</option>
+                            <option value="lexical">사전순</option>
                         </select>
                     </div>
                 </div>
@@ -120,8 +120,6 @@ export default {
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
 
-
-
 body{
     font: 15px;
     margin: 0;
@@ -189,9 +187,10 @@ body{
                 cursor: pointer;
             }
             .pageTitle{
-                margin: 5px 5px 5px -20px;
+                margin: 1px 0px 5px -15px;
                 height: 100%;
                 width: 100%;
+                font-size: 15px;
                 color: gray;
             }
         }
