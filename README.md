@@ -22,7 +22,17 @@
 - `Develop Branch` : 개발 용 브랜치
 - `Feature Branch` : 개별 기능개발 용 브랜치 (`Develop` 브랜치에 PR한 이 후 삭제)
 
+### GitHub 따라하기
+1. 원격 레파지토리에서 로컬 저장소로 파일 복제하기
+  1. 로컬 저장소로 지정할 폴더를 생성한다. (폴더명 자유)
+  2. 폴더에서 Gitbash 를 열고 
+  ```
+  git clone <원격 저장소 주소>
+  ```
+  후 실행
+
 ## Visual Studio Code Extensions
+### 개발 환경 관련
 - `Veter`
 - `ES7 React snippets`
 - `ESLint`
@@ -43,3 +53,6 @@
     3. !form 치고 엔터
 - `Stylelint` : css 구문 오류를 잡아주게 도와주는 익스텐션
 - `vscode-styled-components` : css문법 표현 자동완성 기능 제공하는 익스텐션
+
+### GitHub 관련
+- `Gitmoji` : 커밋 시 이모지를 활용할 수 있도록 하는 익스텐션
