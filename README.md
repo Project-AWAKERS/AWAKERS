@@ -23,6 +23,7 @@
 - `Feature Branch` : 개별 기능개발 용 브랜치 (`Develop` 브랜치에 PR한 이 후 삭제)
 
 ## Visual Studio Code Extensions
+### 개발환경 단일화 관련
 - `Veter`
 - `ES7 React snippets`
 - `ESLint`
@@ -43,3 +44,5 @@
     3. !form 치고 엔터
 - `Stylelint` : css 구문 오류를 잡아주게 도와주는 익스텐션
 - `vscode-styled-components` : css문법 표현 자동완성 기능 제공하는 익스텐션
+### GitHub 협업 관련
+- `Gitmoji` : 깃에서 커밋 시 이모지를 사용할 수 있게 해주는 익스텐션
