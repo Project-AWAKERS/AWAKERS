@@ -60,13 +60,14 @@ body{
         .loginHeader{
             text-align: center;
             font-size: 15px;
-            margin-top: 20px;
+            margin-top: 22px;
             display: flex;
 
             .pageTitle{
                 height: 100%;
                 width: 100%;
                 color: gray;
+                font-size: 16.5px;
             }
     
         }
