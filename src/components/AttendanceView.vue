@@ -91,28 +91,7 @@ export default {
         }
     },
     methods: {
-        //스크롤 이벤트 핸들러
-        handleScroll(){
-            //스크롤이 끝에 도달하면 새로운 행사 추가
-            if(
-                this.$refs.scrollContainer.scrollTop +
-                this.$refs.scrollContainer.clientheight >=
-                this.$refs.scrollContainer.scollHeight
-            ) {
-                this.addEvent();
-            }
-        },
-        //새로운 행사 추가 매서드
-        addEvent(){
-            const newEvent = {
-                id: this.events.length + 1,
-                name: `Event ${this.events.length + 1}`,
-                date: `1월 7일`,     //행사 날짜는 실제 날짜로 대체하기
-                attendees: Math.floor(Math.random() * 100) + 1,     //참석자 수는 랜덤
-                type: `예배`
-            };
-            this.events.push(newEvent);
-        },
+        
     },
 };
 </script>
@@ -124,7 +103,6 @@ body{
     font: 15px;
     margin: 0;
     
-    
     .blackBg{
         box-sizing: border-box;
         width: 100%;
@@ -134,7 +112,7 @@ body{
         top: 0;
         left: 0;
 
-        /*
+        
         //모달창 UI 예제
         .whiteBg{
             width: 350px;
@@ -165,10 +143,9 @@ body{
                 display: inline-flex;
                 gap: 7px;
             }
-        }
-    */
+        }  
+    }
 
-}
     .AttendanceView{
         width: 330px;
         height: 700px;
