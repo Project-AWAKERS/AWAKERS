@@ -71,6 +71,7 @@
             </div>
         </div>
     </body>
+    
     <div class="black-bg" v-if="modalOpen == true">
         <div class="white-bg">
             <p class="modalHeader">일정 관리</p>
