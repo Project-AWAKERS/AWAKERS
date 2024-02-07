@@ -1,5 +1,27 @@
 <template>
     <body>
+        <div class="black-bg" v-if="modalOpen == true">
+            <div class="white-bg">
+                <!-- 제목 -->
+                <div class="modalHeader">
+                    <div>일정 관리</div>
+
+                    <!-- 닫기 버튼 -->
+                    <div class="closeBtn">
+                        <img src="../assets/close.svg" @click="modalOpen = false" alt="닫기"/>
+                    </div>
+                </div>
+                
+                <footer>
+                    <!-- 삭제 버튼 -->
+                    <button type="button" @click="deleteEvent">삭제하기</button>
+
+                    <!-- 수정 버튼 -->
+                    <button type="button"  onclick="location.href='#/EditEventPage'" >수정하기</button>
+                </footer>
+            </div>
+        </div>
+
         <div class="AttendanceView">
             <div class="header">
                 
@@ -71,18 +93,6 @@
             </div>
         </div>
     </body>
-    
-    <div class="black-bg" v-if="modalOpen == true">
-        <div class="white-bg">
-            <p class="modalHeader">일정 관리</p>
-            
-            
-            <!-- 닫기 버튼 -->
-            <div class="closeBtn">
-                <img src="../assets/close.svg" @click="modalOpen = false" alt="닫기"/>
-            </div>  
-        </div>
-    </div>
 </template>
 
 <script>
@@ -110,7 +120,11 @@ export default {
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
 
-.black-bg{
+body{
+    font: 15px;
+    margin: 0;
+
+    .black-bg{
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -118,45 +132,59 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
-
+        text-align: center;
+        justify-content: center;
         
-        //모달창 UI 예제
+
         .white-bg{
             width: 350px;
             height: 150px;
             background: white;
             border-radius: 20px;
             padding: 20px;
-            margin: auto;
-            position: relative;
-            display: flex;
+            position: absolute;
+            bottom: 0;
+
 
             .modalHeader{
-                width: 100%;
+                display: flex;
+                height: 30px;
                 font-size: 17px;
                 font-weight: bold;
                 color: rgb(123, 121, 121);
                 
 
                 .closeBtn{
+                    width: 24px;
+                    height: 10px;
                     margin-left: auto;
                     cursor: pointer;
                 }
-            }
 
-            .editEvent{
-                width: 250px;
-                height: 150px;
-                flex-direction: column;
-                display: inline-flex;
-                gap: 7px;
+                
             }
         }  
+    
+        button{
+            font-size: 15px;
+            font-weight: bold;
+            width: 330px;
+            height: 45px;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #606761;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            bottom: 0;
+        }
+
+        button:hover{
+            background-color: #171a17;
+        }
     }
 
-body{
-    font: 15px;
-    margin: 0;
 
     .AttendanceView{
         width: 330px;
