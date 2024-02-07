@@ -76,6 +76,7 @@
         <div class="white-bg">
             <p class="modalHeader">일정 관리</p>
             
+            
             <!-- 닫기 버튼 -->
             <div class="closeBtn">
                 <img src="../assets/close.svg" @click="modalOpen = false" alt="닫기"/>
