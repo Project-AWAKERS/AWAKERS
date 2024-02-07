@@ -7,7 +7,7 @@
         <!-- 닫기 버튼 -->
         <div class="backButton">
             <a href="javascript:history.back()" class="title"><img src="../assets/close.svg" alt="닫기"/></a>
-        </div>
+        </div>        
 
     </header>
 

@@ -60,7 +60,7 @@
                                 <div class="type">{{ event.type }}</div>
                             </div>
                             <div class="editEvents">
-                                <img src="../assets/options-horizontal.svg" alt="Edit Event" />
+                                <img src="../assets/options-horizontal.svg" @click="modalOpen = true" alt="Edit Event" />
                             </div>
                         </div>
                         
@@ -69,9 +69,18 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </body>
+    <div class="black-bg" v-if="modalOpen == true">
+        <div class="white-bg">
+            <p class="modalHeader">일정 관리</p>
+            
+            <!-- 닫기 버튼 -->
+            <div class="closeBtn">
+                <img src="../assets/close.svg" @click="modalOpen = false" alt="닫기"/>
+            </div>  
+        </div>
+    </div>
 </template>
 
 <script>
@@ -87,7 +96,7 @@ export default {
                     type: '예배',
                 },
             ],
-            isOpen: false,
+            modalOpen: false,
         }
     },
     methods: {
@@ -99,11 +108,7 @@ export default {
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
 
-body{
-    font: 15px;
-    margin: 0;
-    
-    .blackBg{
+.black-bg{
         box-sizing: border-box;
         width: 100%;
         height: 100%;
@@ -114,7 +119,7 @@ body{
 
         
         //모달창 UI 예제
-        .whiteBg{
+        .white-bg{
             width: 350px;
             height: 150px;
             background: white;
@@ -122,13 +127,14 @@ body{
             padding: 20px;
             margin: auto;
             position: relative;
+            display: flex;
 
             .modalHeader{
                 width: 100%;
-                font-size: 20px;
+                font-size: 17px;
                 font-weight: bold;
                 color: rgb(123, 121, 121);
-                display: flex;
+                
 
                 .closeBtn{
                     margin-left: auto;
@@ -145,6 +151,10 @@ body{
             }
         }  
     }
+
+body{
+    font: 15px;
+    margin: 0;
 
     .AttendanceView{
         width: 330px;
