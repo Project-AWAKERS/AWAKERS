@@ -1,22 +1,29 @@
-#AWAKERS
+# AWAKERS
 
 ## Vue.js 개발환경 설정 
 1. 해당 리포지토리 .zip파일 다운
 2. zip파일 바탕화면에 압축 해제
 3. VScode에서 해당 폴더로 이동
    1. cd `desktop`
-   2. cd `2024-AWAKERS-develop`
-   3. cd `2024-AWAKERS-develop`
+   2. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)
+   3. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)_
    4. npm install
-5. npm run dev로 프로젝트 실행
-6. `npm run dev` : 개발자 모드로 실행 <br>
+5. `npm run dev`로 프로젝트 실행<br>
 
 ## 중요 명령어
 - `npm run dev` : 개발자 모드로 실행
-- `Ctrl + c` : 작업 중지<br>
+- `Ctrl + c` : `Y`입력시 작업 중지<br>
 
+## GitHub 협업 하는 방법!!! (매우 중요!!!)
+### `Feature-Branch` 전략 사용
+- `Feature-Branch` 전략이란?
+  -> `Main Branch`, `Develop Branch`, `Feature Branch` 이 세개의 브랜치를 사용하여 여러 팀원이 동시에 다양한 작업을 진행할 수 있으며, 변경 사항을 체계적으로 통합할 수 있게 해주는 방식
+- `Main Branch` : 배포 브랜치 (실제 구동되고 있는 서비스, 직접적인 push 절대 불가)
+- `Develop Branch` : 개발 용 브랜치
+- `Feature Branch` : 개별 기능개발 용 브랜치 (`Develop` 브랜치에 PR한 이 후 삭제)
 
 ## Visual Studio Code Extensions
+### 개발환경 단일화 관련
 - `Veter`
 - `ES7 React snippets`
 - `ESLint`
@@ -37,3 +44,5 @@
     3. !form 치고 엔터
 - `Stylelint` : css 구문 오류를 잡아주게 도와주는 익스텐션
 - `vscode-styled-components` : css문법 표현 자동완성 기능 제공하는 익스텐션
+### GitHub 협업 관련
+- `Gitmoji` : 깃에서 커밋 시 이모지를 사용할 수 있게 해주는 익스텐션
