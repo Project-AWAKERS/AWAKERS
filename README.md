@@ -4,10 +4,7 @@
 1. 해당 리포지토리 .zip파일 다운
 2. zip파일 바탕화면에 압축 해제
 3. VScode에서 해당 폴더로 이동
-   1. cd `desktop`
-   2. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)
-   3. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)_
-   4. npm install
+4. `npm install`
 5. `npm run dev`로 프로젝트 실행<br>
 
 ## 중요 명령어
@@ -21,6 +18,25 @@
 - `Main Branch` : 배포 브랜치 (실제 구동되고 있는 서비스, 직접적인 push 절대 불가)
 - `Develop Branch` : 개발 용 브랜치
 - `Feature Branch` : 개별 기능개발 용 브랜치 (`Develop` 브랜치에 PR한 이 후 삭제)
+
+### 서로 다른 두 원격 저장소 병합하는 방법 
+해당 블로그 참조 : https://velog.io/@www_1216/%EC%84%9C%EB%A1%9C-%EB%8B%A4%EB%A5%B8-%EB%91%90-%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%91%ED%95%A9%ED%95%98%EA%B8%B0
+   1. 커밋 로그를 병합하기 위해 병합할 원격 저장소를 <병합할 저장소 이름>으로 추가
+      - `git remote add <병합할 저장소 이름> <병합할 저장소 주소>`
+      - ex) `git remote add pre https://github.com/... .../` *pre: 병합할 저장소 이름
+   2. 원격 저장소에 저장된 커밋 기록들을 가져온다. (병합은 아직 하지 않는다.)
+      - `git fetch <병합할 저장소 이름>`
+      - ex) `git fetch pre` *pre: 병합할 저장소 이름
+   3. 연관이 없는 기록들을 병합한다.
+      - `git merge --allow-unrelated-hisotires <병합할 저장소 이름>/<병합하고 싶은 branch 이름>`
+      - ex) `git merge --allow-unrelated-histories pre/master` *pre: 병합할 저장소 이름 master: 병합하고 싶은 branch 이름
+   4. 병합이 완료되었으므로 병합된 원격 저장소 지운다.
+      - `git remote remove <병합할 저장소 이름>`
+      - ex) `git remote remove pre`
+   5. 병합 완료된 로그를 커밋한다.
+      - `git commit -m "커밋메시지"`
+
+<br>
 
 ## Visual Studio Code Extensions
 ### 개발환경 단일화 관련
