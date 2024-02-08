@@ -4,10 +4,7 @@
 1. 해당 리포지토리 .zip파일 다운
 2. zip파일 바탕화면에 압축 해제
 3. VScode에서 해당 폴더로 이동
-   1. cd `desktop`
-   2. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)
-   3. cd `2024-AWAKERS-develop` (폴더 이름은 변경 가능)_
-   4. npm install
+   1. npm install
 5. `npm run dev`로 프로젝트 실행<br>
 
 ## 중요 명령어
