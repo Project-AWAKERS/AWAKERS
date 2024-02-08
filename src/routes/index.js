@@ -2,6 +2,8 @@ import  {createRouter, createWebHashHistory} from 'vue-router';
 import AttendancePage from '~/pages/AttendancePage';
 import LoginPage from '~/pages/LoginPage';
 import AddEventPage from '~/pages/AddEventPage';
+import EditEventPage from '~/pages/EditEventPage';
+
 import "../assets/chevron-left.svg";
 import "../assets/options-horizontal.svg";
 import "../assets/close.svg";
@@ -28,6 +30,11 @@ export default createRouter({
             path: "/AddEventPage",
             name: AddEventPage,
             component: AddEventPage,
+        },
+        {
+            path: "/EditEventPage",
+            name: EditEventPage,
+            component: EditEventPage,
         },
     ],
 });
