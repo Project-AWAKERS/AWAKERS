@@ -40,12 +40,12 @@
 
 ## Visual Studio Code Extensions
 ### 개발환경 단일화 관련
-- `Veter`
+- `Vetur`
 - `ES7 React snippets`
 - `ESLint`
 - `VSCode Great Icons`
 - `Prettier-Code formatter`
-- `Visual Studio IntelliCode`
+- `IntelliCode`
 - `HTML CSS Support` : HTML 요소의 class에서 css 선택자 요소를 쓸 때 자동 완성 기능 지원해주는 익스텐션
 - `HTML to CSS autocompletion` : CSS에서 코딩할 때 HTML에서 사용한 속성이름을 자동 완성해주는 기능 지원해주는 익스텐션
 - `Auto Rename Tag` : 태그 이름을 수정할 때, <>여는 태그와 </>닫는 태그를 동시에 수정하게 해주는 익스텐션
