@@ -134,6 +134,7 @@ body{
         left: 0;
         text-align: center;
         justify-content: center;
+        display: flex;
         
 
         .white-bg{
@@ -142,8 +143,9 @@ body{
             background: white;
             border-radius: 20px;
             padding: 20px;
-            position: absolute;
+            margin: 0 auto;
             bottom: 0;
+            position: absolute;
 
 
             .modalHeader{
