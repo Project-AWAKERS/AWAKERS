@@ -11,7 +11,9 @@ import AttendanceView from "../components/AttendanceView.vue";
 import LoginView from "../components/LoginView.vue";
 import AddEventView from "../components/AddEventView.vue";
 import EditEventView from "../components/EditEventView.vue";
-export default { components: { AttendanceView, LoginView, AddEventView, EditEventView }};
+import AttendanceDashboardView from "../components/AttendanceDashboardView.vue";
+export default { components: { AttendanceView, LoginView, AddEventView, EditEventView, AttendanceDashboardView }};
+
 </script>
 
 <style lang="scss" scoped>
