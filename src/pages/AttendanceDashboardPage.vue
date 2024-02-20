@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="container">
-            <EditEventView />
+            <AttendanceView />
         </div>
     </div>
 </template>
@@ -13,7 +13,6 @@ import AddEventView from "../components/AddEventView.vue";
 import EditEventView from "../components/EditEventView.vue";
 import AttendanceDashboardView from "../components/AttendanceDashboardView.vue";
 export default { components: { AttendanceView, LoginView, AddEventView, EditEventView, AttendanceDashboardView }};
-
 </script>
 
 <style lang="scss" scoped>
