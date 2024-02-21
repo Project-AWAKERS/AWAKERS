@@ -4,7 +4,7 @@
             <div class="white-bg">
                 <!-- 제목 -->
                 <div class="modalHeader">
-                    <div>일정 관리</div>
+                    <div>출석 관리</div>
 
                     <!-- 닫기 버튼 -->
                     <div class="closeBtn">
@@ -13,16 +13,13 @@
                 </div>
                 
                 <footer>
-                    <!-- 삭제 버튼 -->
-                    <button type="button" @click="deleteEvent">삭제하기</button>
-
                     <!-- 수정 버튼 -->
                     <button type="button"  onclick="location.href='#/EditEventPage'" >수정하기</button>
                 </footer>
             </div>
         </div>
 
-        <div class="AttendanceView">
+        <div class="AttendanceDashboardView">
             <div class="header">
                 
                 <!-- 뒤로 가기 버튼 -->
@@ -31,9 +28,24 @@
                 </div>
                 
                 <!-- 페이지 제목-->
-                <p class="pageTitle">출석관리</p>
+                <p class="pageTitle">출석 대시보드</p>
             </div>
             <div class="container">
+                <div class="menu">
+                    <div class="filterMenu">
+                        
+                        <!-- 페이지 소제목-->
+                        <div class="title">AWAKE 예배</div>  
+                        <div class="subtitle">1월 7일</div>                         
+
+                        <!--토스트 팝업 메뉴 버튼 -->
+                        <div class="toast">
+                            <button type="button" class="toastButton">
+                                <img src="../assets/options-horizontal.svg" onclick="location.href='#/AddEventPage'" alt="Add Event" class="addButton">
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -133,7 +145,7 @@ body{
     }
 
 
-    .AttendanceView{
+    .AttendanceDashboardView{
         width: 330px;
         height: 700px;
         margin: 0 auto;
@@ -182,8 +194,20 @@ body{
                         color: rgb(118, 114, 114);
                         margin-top: 3px;
                         font-weight: 800;
-                        width: 80px;
+                        width: 150px;
                         height: 24px;
+                    }
+
+                    .subtitle{
+                        width: 290px;
+                        height: 50px;
+                        padding: 10px;
+                        margin-top: 17px;
+                        margin-left: -160px;
+                        background: transparent;
+                        color : rgb(199, 193, 193);
+                        font-size: 10px;
+                        float: left;
                     }
 
                     .toast{
@@ -194,6 +218,7 @@ body{
                             border: none;
                             background-color: transparent;
                             cursor: pointer;
+                            height: 45px;
 
                         .addButton{
                             cursor: pointer;
