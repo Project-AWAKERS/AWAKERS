@@ -17,7 +17,7 @@
                     <button type="button" @click="deleteEvent">삭제하기</button>
 
                     <!-- 수정 버튼 -->
-                    <button type="button"  onclick="location.href='#/EditEventPage'" >수정하기</button>
+                    <button type="button"  onclick="location.href='#/EditEventPage'">수정하기</button>
                 </footer>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 <!-- 컨텐츠 -->
                 <div class="contentsContainer">
                     <div class="contents">
-                        <div v-for="event in events" :key="event.id" class="contentsBox">
+                        <div v-for="event in events" :key="event.id" class="contentsBox" onclick="location.href='#/AttendanceDashboardPage'">
                             <div class="contentsTitle">{{ event.name }}</div>
                             <div class="contentsDate">{{ event.date }}</div>
                             <div class="etc">

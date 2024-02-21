@@ -3,6 +3,7 @@ import AttendancePage from '~/pages/AttendancePage';
 import LoginPage from '~/pages/LoginPage';
 import AddEventPage from '~/pages/AddEventPage';
 import EditEventPage from '~/pages/EditEventPage';
+import AttendanceDashboardPage from '~/pages/AttendanceDashboardPage';
 
 import "../assets/chevron-left.svg";
 import "../assets/options-horizontal.svg";
@@ -36,5 +37,10 @@ export default createRouter({
             name: EditEventPage,
             component: EditEventPage,
         },
+        {
+            path: "/AttendanceDashboardPage",
+            name: AttendanceDashboardPage,
+            component: AttendanceDashboardPage,
+        }
     ],
 });
