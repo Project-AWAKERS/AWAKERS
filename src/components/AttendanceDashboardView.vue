@@ -34,62 +34,7 @@
                 <p class="pageTitle">출석관리</p>
             </div>
             <div class="container">
-                <div class="menu">
-                    <div class="filterMenu">
-                        
-                        <!-- 페이지 소제목-->
-                        <div class="title">일정 선택</div>    
-
-                        <!--토스트 팝업 메뉴 버튼 -->
-                        <div class="toast">
-                            <button type="button" class="toastButton">
-                                <img src="../assets/plus-square.svg" onclick="location.href='#/AddEventPage'" alt="Add Event" class="addButton">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 필터링 버튼 -->
-                <div class="filters">
-                    
-                    <!-- 필터링 버튼 1 (전체, 예배별, 행사별, 봉사별)-->
-                    <div class="filterButton">
-                        <div class="selectTypeButton">
-                            <button class="selectType">전체</button>
-                            <button class="selectType">예배</button>
-                            <button class="selectType">행사</button>
-                            <button class="selectType">봉사</button>
-                        </div>
-                    </div>
-
-                    <!-- 필터링 버튼 2 -->
-                    <div class="filterButton2">
-                        <select name="orders" id="order">
-                            <option value="date">날짜순</option>
-                            <option value="lexical">사전순</option>
-                        </select>
-                    </div>
-                </div>
                 
-                <!-- 컨텐츠 -->
-                <div class="contentsContainer">
-                    <div class="contents">
-                        <div v-for="event in events" :key="event.id" class="contentsBox">
-                            <div class="contentsTitle">{{ event.name }}</div>
-                            <div class="contentsDate">{{ event.date }}</div>
-                            <div class="etc">
-                                <div class="attendance">{{ event.attendees }}명 출석</div>
-                                <div class="type">{{ event.type }}</div>
-                            </div>
-                            <div class="editEvents">
-                                <img src="../assets/options-horizontal.svg" @click="modalOpen = true" alt="Edit Event" />
-                            </div>
-                        </div>
-                        
-                        <!-- 스크롤을 감지하기 위한 이벤트 리스너 -->
-                        <div ref="scrollContainer" @scroll="handleScroll" class="scrollContainer"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </body>

@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="container">
-            <AttendanceView />
+            <AttendanceDashboardView />
         </div>
     </div>
 </template>
