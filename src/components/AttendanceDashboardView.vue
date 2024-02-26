@@ -41,12 +41,50 @@
                         <!--토스트 팝업 메뉴 버튼 -->
                         <div class="toast">
                             <button type="button" class="toastButton">
-                                <img src="../assets/options-horizontal.svg" onclick="location.href='#/AddEventPage'" alt="Add Event" class="addButton">
+                                <img src="../assets/options-horizontal.svg" @click="modalOpen = true" alt="Add Event" class="addButton">
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- 필터링 버튼 -->
+                <div class="filters">
+                    
+                    <!-- 필터링 버튼 1 (모임필터)-->
+                    <div class="filterButton">
+                        <div class="filterButton1">
+                            <select name="orders" id="order">
+                            <option value="captin">정승환 우리모임</option>
+                            <option value="captin">한슬기 우리모임</option>
+                            <option value="captin">선하민 우리모임</option>
+                            <option value="captin">이진영 우리모임</option>
+                            <option value="captin">김용석 우리모임</option>
+                            <option value="captin">윤규성 우리모임</option>
+                            <option value="captin">방주혁 우리모임</option>
+                            <option value="captin">김현수 우리모임</option>
+                            <option value="captin">이윤원 우리모임</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 필터링 버튼 2 -->
+                    <div class="filterButton3">
+                        <select name="orders" id="order2">
+                            <option value="good">연속 결석</option>
+                            <option value="bad">출석 복귀</option>
+                            <option value="soso">결석 시작</option>
+                        </select>
+                    </div>
+
+                    <!-- 필터링 버튼 3 -->
+                    <div class="filterButton2">
+                        <select name="orders" id="order">
+                            <option value="cumulative">누적 출석순</option>
+                            <option value="age">나이순</option>
+                            <option value="ascending">가나다순</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
@@ -96,7 +134,7 @@ body{
 
         .white-bg{
             width: 350px;
-            height: 150px;
+            height: 90px;
             background: white;
             border-radius: 20px;
             padding: 20px;
@@ -185,6 +223,7 @@ body{
                 display: flex;
 
                 .filterMenu{
+                    margin-top: -15px;
                     font-size: 18px;
                     width: 330px;
                     height: 24px;
@@ -232,26 +271,33 @@ body{
             width: 330px;
             height: 100px;
 
-            .selectTypeButton{
-                display: flex;
-                gap: 7px;
-                border-radius: 5px;
-                width: 200px;
-                height: 30px;
+            .filterButton1{
+                float: left;
+                margin-top: 3px;
+                margin-right: 15px;
 
-                .selectType{
-                    width: 50px;
-                    height: 30px;
-                    border : none;
-                    border-radius : 4px;
-                    color: rgb(91, 88, 88);
+                #order{
+                    color: rgb(178, 177, 177);
+                    width: 110px; 
+                    height: 25px; 
+                    border-style: none;
                     cursor: pointer;
-                    //background-color: rgb(204, 198, 198);
+                    font-size: 12px;
+                    text-align: center;
                 }
-
-                .selectType:hover{
-                    color: white;
-                    background-color: rgb(88, 87, 87);
+            }
+            .filterButton3{
+                    float: right;
+                    margin-top: 50px;
+                    margin-right: 100px;                
+                #order2{
+                    color: rgb(178, 177, 177);
+                    width: 110px; 
+                    height: 25px; 
+                    border-style: none;
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-align: center;
                 }
             }
         }
@@ -259,14 +305,16 @@ body{
         .filterButton2{
             float: right;
             margin-top: -45px;
-            margin-right: 10px;
+            margin-right: 2px;
 
             #order{
                 color: black;
-                width: 62px; 
+                width: 80px; 
                 height: 20px; 
                 border-style: none;
                 cursor: pointer;
+                font-size: 10px;
+                text-align: right;
             }
         }
         
